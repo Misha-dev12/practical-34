@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>JS</title>
+
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+	</head>
+
+	<body>
+		<p>
+			1. Приховайте повідомлення за допомогою делегування. Є список повідомлень
+			із кнопками видалення [x]. Зробіть так, щоб кнопки працювали.
+		</p>
+		<div class="content">
+			<div class="text">
+				<button class="button">[x]</button>
+				<h3>Кінь</h3>
+				<p>
+					Кінь є одним із двох підвидів Equus ferus, що існує. Це парнокопитний
+					ссавець, що належить до таксономічної родини Equidae. За останні 45-55
+					мільйонів років кінь еволюціонував із маленької багатопалої істоти,
+					Eohippus, до великої однопалої тварини сучасності.
+				</p>
+			</div>
+			<div class="text">
+				<button class="button">[x]</button>
+				<h3>Осел</h3>
+				<p>
+					Ішак або осел (Equus africanus asinus) є одомашненим представником
+					сімейства коней, Equidae. Диким предком осла є африканський дикий осел
+					E. africanus. Осел використовувався як робоча тварина щонайменше 5000
+					років.
+				</p>
+			</div>
+			<div class="text">
+				<button class="button">[x]</button>
+				<h3>Кіт</h3>
+				<p>
+					Домашня кішка (лат. Felis catus) -- невеликий, типово пухнастий, хижий
+					ссавець. Їх часто називають домашніми кішками, коли вони проживають з
+					людьми, або просто кішками, коли нема потреби відрізняти їх від інших
+					котячих. Люди часто цінують кішок за товариські стосунки й за їх
+					здатність полювати на шкідників.
+				</p>
+			</div>
+		</div>
+		<p>2. Таблиця. На клік змінити колір ячейки.</p>
+		<table id="bagua-table">
+			<tr>
+				<th colspan="3">
+					Таблиця <em>Багуа</em>: Напрямок, Елемент, Колір, Значення
+				</th>
+			</tr>
+			<tr>
+				<td class="nw">
+					<strong>Північний захід</strong> <br />Метал <br />Срібний
+					<br />Старійшини
+				</td>
+				<td class="n">
+					<strong>Північ</strong> <br />Вода <br />Блакитний <br />Зміни
+				</td>
+				<td class="ne">
+					<strong>Північний схід</strong> <br />Земля <br />Жовтий
+					<br />Напрямок
+				</td>
+			</tr>
+			<tr>
+				<td class="w">
+					<strong>Захід</strong> <br />Метал <br />Золотий <br />Молодість
+				</td>
+				<td class="c">
+					<strong>Центр</strong> <br />Все <br />Пурпурний <br />Гармонія
+				</td>
+				<td class="e">
+					<strong>Схід</strong> <br />Деревина <br />Блакитний <br />Майбутнє
+				</td>
+			</tr>
+			<tr>
+				<td class="sw">
+					<strong>Південний захід</strong> <br />Земля <br />Коричневий
+					<br />Спокій
+				</td>
+				<td class="s">
+					<strong>Південь</strong> <br />Вогонь <br />Помаранчевий <br />Слава
+				</td>
+				<td class="se">
+					<strong>Південний схід</strong> <br />Деревина <br />Зелений
+					<br />Романтика
+				</td>
+			</tr>
+		</table>
+
+		<p>3. Створіть дерево, яке показує/приховує дочірні вузли при кліці:</p>
+
+		<ul class="list">
+			<li>
+				<span>Тварини</span>
+				<ul>
+					<li>
+						<span>Ссавці</span>
+						<ul>
+							<li>Корови</li>
+							<li>Осли</li>
+							<li>Собаки</li>
+							<li>Тигри</li>
+						</ul>
+					</li>
+					<li>
+						<span>Інші</span>
+						<ul>
+							<li>Змії</li>
+							<li>Птахи</li>
+							<li>Ящірки</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<span>Риби</span>
+				<ul>
+					<li>
+						<span>Акваріумні</span>
+						<ul>
+							<li>Гуппі</li>
+							<li>Риба-янгол</li>
+						</ul>
+					</li>
+					<li>
+						<span>Морські</span>
+						<ul>
+							<li>Морська форель</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<p>
+			4. Зробіть таблицю відсортованою: кліки на елементах
+			<th>повинні сортувати її за відповідним стовпчиком.</th>
+		</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th data-type="number">Вік</th>
+					<th data-type="string">Ім’я</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>5</td>
+					<td>Іван</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Петро</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>Ганна</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Євген</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Ілля</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			5. Створіть JS-код для поведінки спливаючої підказки. При наведенні миші
+			на елемент з data-tooltip, підказка має з’явитися над ним і ховатися при
+			переході на інший елемент.
+		</p>
+		<div class="buttons">
+			<button data-tooltip="Це підказка для першої кнопки">Кнопка 1</button>
+			<button data-tooltip="Це підказка для другої кнопки">Кнопка 2</button>
+		</div>
+		<div class="tooltip"></div>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum
+			cumque, nam, quos magnam dolorum debitis voluptatem ipsam sapiente sequi
+			nulla saepe suscipit ipsum non ad tempora commodi laudantium praesentium.
+		</p>
+
+		<p>
+			6. Зробіть так, щоб усі посилання всередині елемента з id="contents"
+			запитали у користувача, чи дійсно він хоче вийти. І якщо ні, то не
+			переходьте за посиланням.
+		</p>
+		<div id="contents">
+			<p>
+				<a
+					target="_blank"
+					href="https://www.google.com"
+					><i>перейдіть сюди</i></a
+				>
+			</p>
+			<p>
+				<a
+					target="_blank"
+					href="https://uk.wikipedia.org/"
+					>перейдіть сюди</a
+				>
+			</p>
+		</div>
+
+		<p>
+			7. Створіть галерею зображень, де основне зображення змінюється
+			натисканням на мініатюру.
+		</p>
+
+		<div class="images__content">
+			<p>
+				<img
+					class="main__img"
+					src="https://en.js.cx/gallery/img2-lg.jpg"
+					alt="Main image"
+				/>
+			</p>
+			<ul class="images">
+				<li>
+					<a
+						href="https://en.js.cx/gallery/img3-lg.jpg"
+						title="Зображення 3"
+						><img src="https://en.js.cx/gallery/img3-thumb.jpg"
+					/></a>
+				</li>
+				<li>
+					<a
+						href="https://en.js.cx/gallery/img4-lg.jpg"
+						title="Зображення 4"
+						><img src="https://en.js.cx/gallery/img4-thumb.jpg"
+					/></a>
+				</li>
+				<li>
+					<a
+						href="https://en.js.cx/gallery/img5-lg.jpg"
+						title="Зображення 5"
+						><img src="https://en.js.cx/gallery/img5-thumb.jpg"
+					/></a>
+				</li>
+				<li>
+					<a
+						href="https://en.js.cx/gallery/img6-lg.jpg"
+						title="Зображення 6"
+						><img src="https://en.js.cx/gallery/img6-thumb.jpg"
+					/></a>
+				</li>
+			</ul>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,159 @@
+.content {
+	background-color: rgb(216, 213, 213);
+}
+.text {
+	border-top: 5px solid chartreuse;
+	padding: 10px 20px;
+	position: relative;
+}
+h3 {
+	margin: 0;
+}
+.button {
+	cursor: pointer;
+	background-color: transparent;
+	color: brown;
+	border: none;
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+#bagua-table th {
+	text-align: center;
+	font-weight: bold;
+}
+
+#bagua-table td {
+	width: 150px;
+	white-space: nowrap;
+	text-align: center;
+	vertical-align: bottom;
+	padding-top: 5px;
+	padding-bottom: 12px;
+}
+
+#bagua-table .nw {
+	background: #999;
+}
+#bagua-table .n {
+	background: #03f;
+	color: #fff;
+}
+#bagua-table .ne {
+	background: #ff6;
+}
+#bagua-table .w {
+	background: #ff0;
+}
+#bagua-table .c {
+	background: #60c;
+	color: #fff;
+}
+#bagua-table .e {
+	background: #09f;
+	color: #fff;
+}
+#bagua-table .sw {
+	background: #963;
+	color: #fff;
+}
+#bagua-table .s {
+	background: #f60;
+	color: #fff;
+}
+#bagua-table .se {
+	background: #0c3;
+	color: #fff;
+}
+#bagua-table .highlight {
+	background: red;
+}
+
+.list li span {
+	transition: 0.3s;
+	cursor: pointer;
+	position: relative;
+}
+.list li span::after {
+	content: ' ';
+	position: absolute;
+	border: solid black;
+	border-width: 0 1px 1px 0;
+	padding: 3px;
+	top: 9px;
+	right: -15px;
+	transform: rotate(-135deg);
+	transition: transform 0.3s ease;
+}
+.list li span.closed::after {
+	top: 4px;
+	transform: rotate(45deg);
+}
+.list li span:hover {
+	color: #03f;
+}
+.list ul {
+	max-height: 1000px;
+	transition: max-height 0.5s ease-out;
+}
+
+.list ul.hide {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s ease-out;
+}
+
+table {
+	border-collapse: collapse;
+}
+th,
+td {
+	border: 1px solid black;
+	padding: 4px;
+}
+th {
+	cursor: pointer;
+	position: relative;
+}
+th:hover {
+	background: yellow;
+}
+button {
+	position: relative;
+	margin: 20px;
+	padding: 10px;
+}
+.tooltip {
+	position: absolute;
+	background: #333;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-size: 12px;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.3s;
+	white-space: nowrap;
+	display: inline-block;
+	z-index: 1000; /* Додайте, щоб підказка була поверх інших елементів */
+}
+
+.images__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main__img {
+	width: 550px;
+	height: 400px;
+}
+.images {
+	display: flex;
+	gap: 50px;
+	padding: 0;
+}
+.images li {
+	list-style-type: none;
+}
